@@ -79,7 +79,7 @@ def sort_ast_by_pass_dist(ast_arr):
 	else:
 		return []
 
-def sort_ast_by_time(ast_arr):
+def sort_ast_by_time(ast_hazardous):
 	ast_hazardous.sort(key = lambda x: x[4], reverse=False)
 	return ast_hazardous
 
