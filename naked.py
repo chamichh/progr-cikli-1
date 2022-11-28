@@ -152,6 +152,7 @@ if __name__ == "__main__":
 						tmp_ast_nasa_jpl_url = val['nasa_jpl_url']
 						# Getting id of asteroid
 						tmp_ast_id = val['id']
+						logger.info("Asteroid ID: "tmp_ast_id)
 						if 'kilometers' in val['estimated_diameter']:
 							if 'estimated_diameter_min' and 'estimated_diameter_max' in val['estimated_diameter']['kilometers']:
 								tmp_ast_diam_min = round(val['estimated_diameter']['kilometers']['estimated_diameter_min'], 3)
